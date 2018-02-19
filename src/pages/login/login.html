@@ -12,32 +12,5 @@
 </ion-header>
 
 <ion-content padding>
-  <div text-center>
-    <button ion-button small color="secondary">Code</button>
-    <button ion-button small outline color="secondary">Job Status</button>
-    <button ion-button small outline color="secondary">WO Status</button>
-    <button ion-button small outline color="secondary">Maintainance Type</button>
-    <button ion-button small outline color="secondary">Date</button>
-    <button ion-button small outline color="secondary">Asset</button>
-    <button ion-button small outline color="secondary">Staff</button>
-  </div><br>
-
-  <ion-item style="font-size:2.4rem;">
-    <ion-textarea placeholder="#01001"></ion-textarea>
-  </ion-item><br>
-
-  <button ion-button full round>Search</button><br>
-
-  <ion-card *ngFor="let weekly of weeklyAppointment">
-    <ion-card-header style="color:white;" align="center" class="float-header">
-      <b>{{weekly.tarikh}}</b>
-    </ion-card-header>
-
-    <ion-item style="white-space: normal;padding-left: 5%;text-transform:capitalize;" text-wrap>
-      <br>
-      <h5 style="width: 68%;margin-left: 10%;" text-left><b>{{weekly.workCode}}</b></h5>
-      <h5 style="border: 2px solid hotpink;border-radius: 5px;width: 68%;margin-left: 10%;" text-left><b>{{weekly.problem}}</b></h5>
-      <br>
-    </ion-item>
-  </ion-card>
+ 
 </ion-content>

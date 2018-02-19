@@ -58,19 +58,19 @@ export class SearchPage {
   initializeItems() {
     this.items = [ // yg ni letak dummy data
       {
-        workCode: '#10110',
+        workCode: '10110',
         status: 'Completed',
         asset: 'KLIA2',
         type: 'PCM'
       },
       {
-        workCode: '#10113',
+        workCode: '10113',
         status: 'Follow Up',
         asset: 'KLIA',
         type: 'PCM'
       },
       {
-        workCode: '#10115',
+        workCode: '10115',
         status: 'Follow Up',
         asset: 'MPO',
         type: 'POC'

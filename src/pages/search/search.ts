@@ -100,16 +100,16 @@ export class SearchPage {
 
     // if the value is an empty string don't filter the items
     if (this.val && this.val.trim() != '') {
-      this.items = this.items.map((data) => {
+      this.items = this.items.filter((data) => {
           console.log("data", data)
           if (this.filter == "workCode") { // this.filter == "action" amek kat value html tuu
-            return (data.action.toLowerCase().indexOf(this.val.toLowerCase()) > -1);
+            return (data.workCode.toLowerCase().indexOf(this.val.toLowerCase()) > -1);
           }else if(this.filter == "status"){
-            return data
+            return (data.status.toLowerCase().indexOf(this.val.toLowerCase()) > -1);
           } else if (this.filter == "asset") {
-            return (data.price.toLowerCase().indexOf(this.val.toLowerCase()) > -1);
+            return (data.asset.toLowerCase().indexOf(this.val.toLowerCase()) > -1);
           } else if (this.filter == "type") {
-            return (data.context.toLowerCase().indexOf(this.val.toLowerCase()) > -1);
+            return (data.type.toLowerCase().indexOf(this.val.toLowerCase()) > -1);
           }
         })
     }

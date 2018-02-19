@@ -102,13 +102,13 @@ export class SearchPage {
     if (this.val && this.val.trim() != '') {
       this.items = this.items.map((data) => {
           console.log("data", data)
-          if (this.filter == "action") { // this.filter == "action" amek kat value html tuu
+          if (this.filter == "workCode") { // this.filter == "action" amek kat value html tuu
             return (data.action.toLowerCase().indexOf(this.val.toLowerCase()) > -1);
-          }else if(this.filter == "marks"){
+          }else if(this.filter == "status"){
             return data
-          } else if (this.filter == "price") {
+          } else if (this.filter == "asset") {
             return (data.price.toLowerCase().indexOf(this.val.toLowerCase()) > -1);
-          } else if (this.filter == "context") {
+          } else if (this.filter == "type") {
             return (data.context.toLowerCase().indexOf(this.val.toLowerCase()) > -1);
           }
         })
